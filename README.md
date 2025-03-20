@@ -18,7 +18,7 @@ We are analyzing and reproducing experiments from the following papers:
 
 2. **Related paper (Comparison Section of the Report):**  
    _"Inpainting-Driven Graph Learning via Explainable Neural Networks"_  
-   [ArXiv Link](https://arxiv.org/abs/XXXX.XXXXX)
+   [ArXiv Link](https://ieeexplore.ieee.org/document/10756724)
 
 ---
 
@@ -29,12 +29,13 @@ We are analyzing and reproducing experiments from the following papers:
 | Read and summarize **Paper 1**                      | Fabien Lagnieu      |
 | Prepare the **presentation PDF slides**             | Fabien Lagnieu      |
 | Reproduce at least one **experiment from Paper 1**  | Kenneth Browder     |
+| + a **"new experiment"** (2nd mail)                 | Kenneth Browder     |
 | Analyze and summarize **Paper 2**                   | Kenneth Browder     |
 | Write **Part 1** of the report (Paper 1 summary)    | Fabien Lagnieu      |
 | Write **Part 2** of the report (Paper comparison)   | Kenneth Browder     |
 | Final review and corrections                        | Both                |
-| Upload PDF slides to the platform                  | Fabien Lagnieu      |
-| Upload final report to the platform                | Kenneth Browder     |
+| Upload PDF slides & final report to the platform    | Fabien Lagnieu      |
+
 
 ---
 
@@ -43,12 +44,12 @@ We are analyzing and reproducing experiments from the following papers:
 - **Presentation PDF slides:**  
   - Deadline: **March 31st, 2025**  
   - Upload Link: [Partage IMT - Slides](https://partage.imt.fr/index.php/s/CaiWPT6ZkPTSEsr)  
-  - Naming convention: `08h45_April01_FabienLagnieu_KennethBrowder.pdf`  
+  - Naming convention: `08h45_April01_KennethBrowder_FabienLagnieu.pdf`  
 
 - **Final report (ICML format, 4 pages excluding references):**  
   - Deadline: **March 31st, 2025**  
   - Upload Link: [Partage IMT - Report](https://partage.imt.fr/index.php/s/gymYkMLBtpc7rae)  
-  - Naming convention: `FabienLagnieu_KennethBrowder.pdf`  
+  - Naming convention: `KennethBrowder_FabienLagnieu.pdf`  
 
 - **Oral presentation:**  
   - Date: **April 1st, 2025**  
@@ -96,8 +97,25 @@ The report is divided into two sections:
 - Reproduce **one key experiment** from Paper 1:  
   - Report settings, code version, datasets used.  
   - Analyze results (if reproduction fails, explain why: OOM, hardware, etc.).  
-- Document findings in the **report** and include visuals (plots, tables).  
+- Document findings in the **report** and include visuals (plots, tables) -> 
 - Optional: Propose a **new experiment or ablation study** if time permits.
+
+## 🔹 Experiment Reproduction 
+
+- **Reproduce at least one key experiment** from Paper 1:  
+  - Report the experimental setup: settings, code version, datasets used.  
+  - Analyze results compared to those reported in the paper.  
+  - If reproduction fails, provide a detailed explanation (e.g., Out-Of-Memory, hardware limitations, or implementation issues).
+
+- **Propose and perform an additional experiment**, as required:  
+  - This is mandatory for the final grade.  
+  - Include a discussion of the new experiment in the final report -> Appendix !
+  - Possible directions ?:  
+    - Ablation study (e.g., number of layers, regularizer effect).  
+    - Applying the model to another dataset.  
+    - Varying hyperparameters (e.g., learning rate, neighborhood size).  
+    - Testing model robustness (e.g., noise injection).  
+    - Etc.
 
 ---
 
