@@ -1,0 +1,101 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cheung et~al.(2018)Cheung, Leus, and Ortega]{cheung2018graph}
+Cheung, G., Leus, G., and Ortega, A.
+\newblock Graph spectral image processing.
+\newblock In \emph{Proceedings of the IEEE}, volume 106, pp.\  907--930, 2018.
+
+\bibitem[Do et~al.(2024)Do, Eftekhar, Hosseini, Cheung, and
+  Chou]{do2024interpretable}
+Do, T.~T., Eftekhar, P., Hosseini, S.~A., Cheung, G., and Chou, P.~A.
+\newblock Interpretable lightweight transformer via unrolling of learned graph
+  smoothness priors.
+\newblock In \emph{Proceedings of the 38th Conference on Neural Information
+  Processing Systems (NeurIPS 2024)}, Vancouver, Canada, 2024. PMLR.
+
+\bibitem[{Eastman Kodak}(1993)]{kodak1993}
+{Eastman Kodak}.
+\newblock Kodak lossless true color image suite (photocd pcd0992), 1993.
+\newblock \url{http://r0k.us/graphics/kodak}.
+
+\bibitem[Hu et~al.(2020)Hu, Gao, Cheung, and Guo]{hu2020feature}
+Hu, W., Gao, X., Cheung, G., and Guo, Z.
+\newblock Feature graph learning for 3d point cloud denoising.
+\newblock \emph{IEEE Transactions on Signal Processing}, 68:\penalty0
+  2841--2856, 2020.
+
+\bibitem[Huang et~al.(2015)Huang, Singh, and Ahuja]{huang2015single}
+Huang, J.-B., Singh, A., and Ahuja, N.
+\newblock Single image super-resolution from transformed self-exemplars.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pp.\  5197--5206, 2015.
+
+\bibitem[Ji et~al.(2020)Ji, Zhong, and Ma]{ji2020image}
+Ji, J., Zhong, B., and Ma, K.-K.
+\newblock Image interpolation using multi-scale attention-aware inception
+  network.
+\newblock \emph{IEEE Transactions on Image Processing}, 29:\penalty0
+  9413--9428, 2020.
+
+\bibitem[Liang et~al.(2021)Liang, Cao, Sun, Zhang, Van~Gool, and
+  Timofte]{liang2021swinir}
+Liang, J., Cao, J., Sun, G., Zhang, K., Van~Gool, L., and Timofte, R.
+\newblock Swinir: Image restoration using swin transformer.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision (ICCV) Workshops}, pp.\  1833--1844, 2021.
+
+\bibitem[Ortega et~al.(2018)Ortega, Frossard, Kovacevic, Moura, and
+  Vandergheynst]{ortega2018graph}
+Ortega, A., Frossard, P., Kovacevic, J., Moura, J.~M., and Vandergheynst, P.
+\newblock Graph signal processing: Overview, challenges, and applications.
+\newblock \emph{Proceedings of the IEEE}, 106\penalty0 (5):\penalty0 808--828,
+  2018.
+
+\bibitem[Shewchuk(1994)]{shewchuk1994introduction}
+Shewchuk, J.~R.
+\newblock An introduction to the conjugate gradient method without the
+  agonizing pain.
+\newblock Technical report, Pittsburgh, PA, USA: Carnegie Mellon University,
+  1994.
+
+\bibitem[Shuman et~al.(2013)Shuman, Narang, Frossard, Ortega, and
+  Vandergheynst]{shuman2013emerging}
+Shuman, D.~I., Narang, S.~K., Frossard, P., Ortega, A., and Vandergheynst, P.
+\newblock The emerging field of signal processing on graphs: Extending
+  high-dimensional data analysis to networks and other irregular domains.
+\newblock \emph{IEEE Signal Processing Magazine}, 30\penalty0 (3):\penalty0
+  83--98, 2013.
+
+\bibitem[Wang \& Shroff(2017)Wang and Shroff]{wang2017new}
+Wang, S. and Shroff, N.
+\newblock A new alternating direction method for linear programming.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~30, 2017.
+
+\bibitem[Wang et~al.(2004)Wang, Bovik, Sheikh, and Simoncelli]{wang2004image}
+Wang, Z., Bovik, A.~C., Sheikh, H.~R., and Simoncelli, E.~P.
+\newblock Image quality assessment: From error visibility to structural
+  similarity.
+\newblock \emph{IEEE Transactions on Image Processing}, 13\penalty0
+  (4):\penalty0 600--612, 2004.
+
+\bibitem[Xing et~al.(2022)Xing, Liu, Ye, Zhu, Yang, and Wang]{xing2022residual}
+Xing, M., Liu, Y., Ye, P., Zhu, L., Yang, Q., and Wang, C.
+\newblock Residual spatial-transformer channel attention network for image
+  demosaicking.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pp.\  1852--1861, 2022.
+
+\bibitem[Zhang et~al.(2011)Zhang, Wu, Buades, and Li]{zhang2011color}
+Zhang, L., Wu, X., Buades, A., and Li, X.
+\newblock Color demosaicking by local directional interpolation and nonlocal
+  adaptive thresholding.
+\newblock \emph{Journal of Electronic Imaging}, 20\penalty0 (2):\penalty0
+  023016--023016, 2011.
+
+\end{thebibliography}
