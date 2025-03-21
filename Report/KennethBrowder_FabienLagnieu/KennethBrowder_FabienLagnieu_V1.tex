@@ -115,13 +115,14 @@ This report analyzes the paper \textit{Interpretable Lightweight Transformer via
 \textit{Interpretable Lightweight Transformer via Unrolling of Learned Graph Smoothness Priors}
 \\Tam Thuc Do, Parham Eftekhar, Seyed Alireza Hosseini, Gene Cheung, Philip Chou - Published in June 2024.
 
-\section{Introduction}
+\setcounter{section}{1}
+\subsection{Introduction}
 
 Transformer architectures are central to modern machine learning, particularly in natural language processing and computer vision. Despite their success, they face two main limitations: high computational cost and lack of interpretability. These issues restrict their use in resource-constrained settings or applications requiring transparency.
 
 The paper proposes a simple and effective solution by combining Graph Signal Processing (GSP) with neural network architectures. GSP models data structured as graphs by leveraging their relational information. The authors unroll optimization algorithms for graph signal interpolation into a neural network, resulting in a transformer-like model that is both lightweight and interpretable.
 
-\section{State of the Art}
+\subsection{State of the Art}
 
 Graph-based learning has made important progress in recent years, so many methods focus on learning from data structured as graphs. GSP provides a solid framework for analyzing such data, it extends traditional signal processing tools to irregular graph domains and allows processing signals that live on nodes of a graph by using the graph structure \cite{shuman2013emerging}.
 
@@ -129,15 +130,15 @@ Two key tools in GSP are the Graph Laplacian Regularizer (GLR) and Graph Total V
 
 In the analyzed paper, GLR and GTV guide both graph learning and signal interpolation, ensuring smoothness and edge preservation in the reconstructed signals.
 
-\section{Main Contributions of the Proposed Method}
+\subsection{Main Contributions of the Proposed Method}
 
 The proposed method rethinks the transformer paradigm by integrating graph learning and optimization unrolling into a unified framework for graph signal interpolation. Its core contributions are outlined below.
 
-\subsection{Overview of the Transformer-like Architecture}
+\subsubsection{Overview of the Transformer-like Architecture}
 
 The architecture alternates between learning a similarity graph and updating the interpolated signal. At each layer, the graph and signal are refined through an unrolled optimization process. This iterative structure mimics transformers but relies on graph-based operations, ensuring interpretability and lower complexity.
 
-\subsection{Graph Learning via \textit{Mahalanobis Distance}}
+\subsubsection{Graph Learning via Mahalanobis Distance}
 
 The graph learning module constructs a similarity graph by computing pairwise distances between nodes. It uses the \textit{Mahalanobis distance} \cite{hu2020feature}, which measures the similarity between two feature vectors $\mathbf{f}_i$ and $\mathbf{f}_j$.
 
@@ -145,7 +146,7 @@ The \textit{Mahalanobis distance} between two nodes $i$ and $j$ is defined as: $
 
 This approach guarantees the symmetry of the learned graph and provides an interpretable alternative to the key-query-value attention commonly used in standard transformers.
 
-\subsection{Optimization Unrolling for Signal Interpolation}
+\subsubsection{Optimization Unrolling for Signal Interpolation}
 
 Once the graph is defined, the model performs signal interpolation guided by graph smoothness priors. Two optimization strategies are employed: the \textit{Conjugate Gradient} (CG) method used to minimize the $\ell_2$-norm GLR \cite{shewchuk1994introduction} and the \textit{Alternating Direction Method of Multipliers} (ADMM) applied to minimize the $\ell_1$-norm GTV \cite{wang2017new}.
 
@@ -161,7 +162,7 @@ Once the graph is defined, the model performs signal interpolation guided by gra
 
 Each iteration of these algorithms is implemented as a neural network layer, enabling end-to-end training through backpropagation.
 
-\subsection{Interpretability and Efficiency}
+\subsubsection{Interpretability and Efficiency}
 
 Each layer performs a well-defined, interpretable operation, replacing traditional self-attention with a graph learning module guided by graph smoothness priors, avoiding the opacity of key-query-value mechanisms.
 
@@ -169,9 +170,9 @@ By leveraging unrolled optimization and efficient graph-based operations, the mo
 
 This model advances the state of the art by showing that transformer-like architectures can achieve competitive performance with fewer parameters, while offering greater interpretability than conventional attention mechanisms.
 
-\section{Experimental Validation}
+\subsection{Experimental Validation}
 
-\subsection{Experimental Setup}
+\subsubsection{Experimental Setup}
 
 All experiments are implemented in PyTorch. Models are trained on the DIV2K dataset, containing 800 high-resolution (HR) training images and 100 validation images. To reduce computational cost, the authors extract $64 \times 64$ pixel patches and sample only $1\%$ to $4\%$ of all available patches for training. Testing is performed on three standard benchmarks: McM \cite{zhang2011color}, Kodak \cite{kodak1993}, and Urban100 \cite{huang2015single}.
 
@@ -179,13 +180,13 @@ Two tasks are considered: \textit{Image Interpolation} (reconstructing high-reso
 
 Performance is evaluated using Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index Measure (SSIM) \cite{wang2004image}.
 
-\subsection{Results on \textit{Image Interpolation}}
+\subsubsection{Results on Image Interpolation}
 
 The authors evaluate their models on image interpolation tasks. The proposed models, uGLR and uGTV, are compared to established methods including MAIN \cite{ji2020image} and SwinIR-lightweight \cite{liang2021swinir}, as well as a simple Bicubic interpolation baseline.
 
 uGTV consistently achieves the best PSNR and SSIM scores across all datasets. Notably, it outperforms MAIN and SwinIR, despite having significantly fewer parameters (319k versus 10.9M for MAIN and 0.9M for SwinIR).
 
-\subsection{Results on \textit{Demosaicking}}
+\subsubsection{Results on Demosaicking}
 
 \begin{table}[b]
 \vskip -0.3in
@@ -215,10 +216,10 @@ For demosaicking, uGTV shows competitive performance with a lightweight design. 
 
 uGTV achieves top PSNR and SSIM on Urban100 and closely matches RST-S on Kodak, while using nearly ten times fewer parameters. These results confirm uGTV’s balance between accuracy and efficiency. Its performance generalizes well across datasets without complex architectures.
 
-\subsection{Robustness to Covariate Shift}
+\subsubsection{Robustness to Covariate Shift}
 
 The authors also assess the robustness of their models under covariate shift by adding Gaussian noise to the inputs during testing. Table~\ref{tab:robustness} shows the demosaicking PSNR values for different noise levels ($\sigma$). uGTV consistently outperforms RST-B, especially as noise increases.
-\begin{table}[ht]
+\begin{table}[t]
 \caption{Demosaicking performance (PSNR) under Gaussian noise (trained on noiseless data).}
 \label{tab:robustness}
 \vskip -0.2in
@@ -237,20 +238,20 @@ uGTV & \textbf{28.31} & \textbf{22.89} & \textbf{19.56} & \textbf{15.38} \\
 \end{sc}
 \end{small}
 \end{center}
-\vskip -0.1in
+\vskip -0.2in
 \end{table}
 
 These results confirm that both uGLR and uGTV are more robust to noise compared to RST-B, with uGTV showing the best stability across all tested noise levels.
 
-\subsection{Discussion}
+\subsubsection{Discussion}
 
 The experimental results confirm the effectiveness of the proposed method. Despite having significantly fewer parameters, uGLR and uGTV outperform or match the performance of more complex models like RSTCANet and MAIN. Additionally, they demonstrate better robustness under covariate shifts.
 
-\section{Reproduction and Additional Experiments}
+\subsection{Reproduction and Additional Experiments}
 
 In this section, we describe the experiments we performed to reproduce the key results of the paper, and an additional experiment designed to assess the robustness and generalization capabilities of the proposed method.
 
-\subsection{Reproduction of a Key Experiment}
+\subsubsection{Reproduction of a Key Experiment}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Kenneth %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -262,7 +263,7 @@ In this section, we describe the experiments we performed to reproduce the key r
 
 \textbf{Discussion}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
 
-\subsection{Additional Experiment}
+\subsubsection{Additional Experiment}
 
 \textbf{Objective}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
 
@@ -279,14 +280,15 @@ Further details on these experiments are provided in the appendix. The full code
 \vskip -0.1in
 \end{center}
 
-\section{Critical Analysis}
+\subsection{Critical Analysis}
 
 The proposed model successfully combines interpretability, computational efficiency, and strong empirical results, achieving state-of-the-art performance with significantly fewer parameters.
 
 However, its scalability to very large graphs remains uncertain, and it has so far only been applied to image-based signal interpolation and demosaicking tasks; future work could explore its extension to more diverse graph learning problems such as node classification or link prediction.
 
 
-\setcounter{section}{0}
+\setcounter{section}{2}
+\setcounter{subsection}{0}
 \section*{Section 2: Analysis of a Related Paper}
 
 \textit{Inpainting-Driven Graph Learning via Explainable Neural Networks}
@@ -294,7 +296,7 @@ However, its scalability to very large graphs remains uncertain, and it has so f
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Kenneth %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{ZzZzZ ZzZzZ Kenneth ZzZzZ ZzZzZ}
+\subsection{ZzZzZ ZzZzZ Kenneth ZzZzZ ZzZzZ}
 
 
 
