@@ -835,18 +835,64 @@
 
 
 %---------------------------------------------------------------------------------------
-\begin{frame}{Key Concepts: Task Definitions}
-
-to be continued
-
-\end{frame}
-
-
-%---------------------------------------------------------------------------------------
 \begin{frame}{Key Concepts: Evaluation Metrics}
 
-to be continued
+\begin{columns}[c]
+
+% Left Column - PSNR
+\begin{column}{0.50\textwidth}
+
+\textbf{PSNR (Peak Signal-to-Noise Ratio)}
+
+\begin{itemize}
+    \item Measures pixel-level fidelity between the reconstructed and reference images.
+    
+    \item Formula:
+    \vspace{-0.2cm}
+    {\scriptsize
+    \[
+    PSNR = 10 \log_{10} \left( \frac{MAX_I^2}{MSE} \right)
+    \]
+    }
+    \vspace{-0.6cm}
+    \item $MAX_I$: maximum pixel value (e.g., 255)  
+    \item Higher PSNR $\rightarrow$ Less distortion  
+    \item Common in image compression and reconstruction
+    \item \textbf{Not reflecting human perception}
+    \item Insensitive to structural or perceptual distortions
+\end{itemize}
+
+\end{column}
+
+% Right Column - SSIM
+\begin{column}{0.50\textwidth}
+
+\textbf{SSIM (Structural Similarity Index)}
+
+\begin{itemize}
+    \item Evaluates perceptual similarity: Luminance, Contrast \& Structure
+    
+    \item Formula (simplified):
+    \vspace{-0.2cm}
+    {\scriptsize
+    \[
+    SSIM(x, y) = \frac{(2\mu_x\mu_y + C_1)(2\sigma_{xy} + C_2)}{(\mu_x^2 + \mu_y^2 + C_1)(\sigma_x^2 + \sigma_y^2 + C_2)}
+    \]
+    }
+    \vspace{-0.6cm}
+    \item Values in $[0, 1]$  
+    \item Closer to $1$ $\rightarrow$ More similarity
+\end{itemize}
+
+\begin{center}
+    \includegraphics[width=0.7\linewidth]{PSNRvsSSIM.png}
+\end{center}
+\vspace{-0.2cm}
+\tiny \textit{Images with the same PSNR but decreasing SSIM values show visible perceptual degradation.}
+
+\end{column}
+
+\end{columns}
 
 \end{frame}
-
 \end{document}
