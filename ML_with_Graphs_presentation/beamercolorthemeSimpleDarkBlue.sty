@@ -1,0 +1,39 @@
+%--------------------------------------
+%  Color Settings - Fabien IPP version
+%--------------------------------------
+
+% define custom colors (format : values between 0 and 1)
+\definecolor{IPPBlue}{rgb}{0.0, 0.2, 0.37}       % Dark blue structure
+\definecolor{IPPLightBlue}{rgb}{0.31, 0.64, 1.0} % Accent / block title
+\definecolor{IPPGrey}{rgb}{0.96, 0.96, 0.96}     % Background block body
+\definecolor{IPPGreen}{rgb}{0.0, 0.6, 0.3}       % Example block
+\definecolor{IPPRed}{rgb}{0.72, 0.12, 0.18}      % Alert block
+\definecolor{IPPBlack}{rgb}{0.08, 0.1, 0.12}     % Very dark background (optional)
+
+%------------------------------------------------
+% Theme structure color
+%------------------------------------------------
+\usecolortheme[named=IPPBlue]{structure}
+
+%------------------------------------------------
+% Title & frame titles
+%------------------------------------------------
+\setbeamercolor{title}{fg=white, bg=IPPBlue}
+\setbeamercolor{frametitle}{fg=white, bg=IPPBlue}
+
+%------------------------------------------------
+% Block settings
+%------------------------------------------------
+\setbeamercolor{block title}{fg=white, bg=IPPLightBlue}
+\setbeamercolor{block body}{fg=black, bg=IPPGrey}
+
+\setbeamercolor{block title example}{fg=white, bg=IPPGreen}
+\setbeamercolor{block body example}{fg=black, bg=IPPGrey}
+
+\setbeamercolor{block title alerted}{fg=white, bg=IPPRed}
+\setbeamercolor{block body alerted}{fg=black, bg=IPPGrey}
+
+%------------------------------------------------
+% Optional background for the whole slides (dark theme)
+%------------------------------------------------
+%\setbeamercolor{background canvas}{bg=IPPBlack}
