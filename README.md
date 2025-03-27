@@ -92,14 +92,6 @@ The report is divided into two sections:
 
 ---
 
-## 🔹 Experiment Reproduction
-
-- Reproduce **one key experiment** from Paper 1:  
-  - Report settings, code version, datasets used.  
-  - Analyze results (if reproduction fails, explain why: OOM, hardware, etc.).  
-- Document findings in the **report** and include visuals (plots, tables) -> 
-- Optional: Propose a **new experiment or ablation study** if time permits.
-
 ## 🔹 Experiment Reproduction 
 
 - **Reproduce at least one key experiment** from Paper 1:  
