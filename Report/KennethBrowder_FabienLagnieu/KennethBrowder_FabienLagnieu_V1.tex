@@ -108,7 +108,7 @@
 \printAffiliationsAndNotice{\icmlEqualContribution} % otherwise use the standard text.
 
 \begin{abstract}
-This report analyzes the paper \textit{Interpretable Lightweight Transformer via Unrolling of Learned Graph Smoothness Priors} \cite{do2024interpretable}. The authors propose an efficient and interpretable transformer-like model for graph signal interpolation. Their method uses unrolled optimization algorithms based on graph smoothness priors. The first section presents its main contributions, methodology, and experimental results and describe the reproduction of one key experiment and an additional experiment. The second section examines a related paper, discuss its relevance, and compare its approach with the first.
+This report analyzes the paper \textit{Interpretable Lightweight Transformer via Unrolling of Learned Graph Smoothness Priors} \cite{do2024interpretable}. The authors propose an efficient and interpretable transformer-like model for graph-signal interpolation. Their method uses unrolled optimization algorithms based on graph smoothness priors. The first section presents its main contributions, methodology, and experimental results, and describes the reproduction of one key experiment and an additional experiment. The second section examines a related paper, discusses its relevance, and compares its approach with the first.
 \end{abstract}
 
 \section*{Section 1: Analysis of the Main Paper}
@@ -154,14 +154,14 @@ Once the graph is defined, the model performs signal interpolation guided by gra
 \begin{figure}[ht]
 \vskip -0.1in
 \begin{center}
-\centerline{\includegraphics[width=\columnwidth]{GTV-based_algorithm.png}}
+\centerline{\includegraphics[width=0.9\columnwidth]{GTV-based_algorithm.png}}
 \caption{Unrolling of GTV-based signal interpolation algorithm \cite{do2024interpretable}.}
 \label{fig:unrolling-gtv}
 \end{center}
 \vskip -0.3in
 \end{figure}
 
-Each iteration of these algorithms is implemented as a neural network layer, enabling end-to-end training through backpropagation.
+Each iteration of these algorithms is implemented as a neural network layer, enabling end-to-end training through backpropagation. Each iteration of these algorithms is implemented as a neural network layer, enabling end-to-end training through backpropagation. A schematic algorithm illustrating the iterative structure is provided in Appendix.
 
 \subsubsection{Interpretability and Efficiency}
 
@@ -169,7 +169,7 @@ Each layer performs a well-defined, interpretable operation, replacing tradition
 
 By leveraging unrolled optimization and efficient graph-based operations, the model eliminates large parameter matrices, reducing computational cost while maintaining strong performance.
 
-This model advances the state of the art by showing that transformer-like architectures can achieve competitive performance with fewer parameters, while offering greater interpretability than conventional attention mechanisms.
+This model advances the state-of-the-art by showing that transformer-like architectures can achieve competitive performance with fewer parameters, while offering greater interpretability than conventional attention mechanisms.
 
 \subsection{Experimental Validation}
 
@@ -324,6 +324,32 @@ For the final version, one more page can be added.
 If you want, you can use an appendix like this one.  
 
 The $\mathtt{\backslash onecolumn}$ command above can be kept in place if you prefer a one-column appendix, or can be removed if you prefer a two-column appendix.  Apart from this possible change, the style (font size, spacing, margins, page numbering, etc.) should be kept the same as the main body.
+
+\begin{algorithm}[tb]
+   \caption{Unrolling of GTV-based signal interpolation algorithm.}
+   \label{alg:ugtv_admm_bp}
+\begin{algorithmic}
+   \STATE \textbf{Input:} Initial signal observations $y$, initial graph $C_1$
+   \STATE \textbf{Parameters:} Number of unrolled layers $T$, ADMM iterations $K$, operator $H(\cdot)$
+   \STATE \textbf{Learnable:} Mahalanobis matrix $M$, ADMM parameters, $H$
+   \STATE \textbf{Initialization:} $y_1 \gets y$
+
+   \FOR{$t = 1$ {\bfseries to} $T$}
+       \STATE Initialize $x_t^{(0)}$, $q_t^{(0)}$, $\mu_t^{(0)}$
+       \FOR{$k = 1$ {\bfseries to} $K$}
+            \STATE $(x_t^{(k)}, q_t^{(k)}, \mu_t^{(k)}) \gets \text{ADMM\_Layer}(C_t, y_t, q_t^{(k-1)}, \mu_t^{(k-1)})$
+       \ENDFOR
+       \STATE $x_t \gets x_t^{(K)}$ \hfill \textit{\# Final signal at layer $t$}
+       \IF{$t < T$}
+           \STATE $C_{t+1} \gets \text{GraphLearn}(x_t; M)$ \hfill \textit{\# Learnable graph from $x_t$}
+           \STATE $y_{t+1} \gets H(x_t)$ \hfill \textit{\# Feature transform for next iteration}
+       \ENDIF
+   \ENDFOR
+
+   \STATE \textbf{Compute loss:} $\mathcal{L}(x_T, x_{gt})$ \hfill \textit{\# x ground truth $x_{gt}$}
+   \STATE \textbf{Backpropagate gradients through all layers to update parameters}
+\end{algorithmic}
+\end{algorithm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
