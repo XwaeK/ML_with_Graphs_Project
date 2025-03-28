@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.13)  27 MAR 2025 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.13)  29 MAR 2025 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**KennethBrowder_FabienLagnieu_V1.tex
-(./KennethBrowder_FabienLagnieu_V1.tex
+**KennethBrowder_FabienLagnieu.tex
+(./KennethBrowder_FabienLagnieu.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -800,8 +800,8 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count344
 \l__pdf_internal_box=\box73
 )
-(./KennethBrowder_FabienLagnieu_V1.aux)
-\openout1 = `KennethBrowder_FabienLagnieu_V1.aux'.
+(./KennethBrowder_FabienLagnieu.aux)
+\openout1 = `KennethBrowder_FabienLagnieu.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
@@ -866,9 +866,10 @@ e
 ))
 Package hyperref Info: Link coloring ON on input line 60.
 
-(./KennethBrowder_FabienLagnieu_V1.out) (./KennethBrowder_FabienLagnieu_V1.out)
+(./KennethBrowder_FabienLagnieu.out) (./KennethBrowder_FabienLagnieu.out)
 \@outlinefile=\write4
-\openout4 = `KennethBrowder_FabienLagnieu_V1.out'.
+\openout4 = `KennethBrowder_FabienLagnieu.out'.
+
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -934,8 +935,11 @@ ocal/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}
 <GTV-based_algorithm.png, id=46, 1474.50874pt x 734.745pt>
 File: GTV-based_algorithm.png Graphic file (type png)
 <use GTV-based_algorithm.png>
-Package pdftex.def Info: GTV-based_algorithm.png  used on input line 157.
+Package pdftex.def Info: GTV-based_algorithm.png  used on input line 159.
 (pdftex.def)             Requested size: 211.3883pt x 105.33008pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 
@@ -948,17 +952,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.244 
+l.247 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.244 
+l.247 
        <./GTV-based_algorithm.png>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-80.
+Underfull \vbox (badness 3158) has occurred while \output is active []
 
+
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+83.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -967,9 +974,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \vbox (badness 2460) has occurred while \output is active []
-
-
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -978,37 +983,63 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.307 \newpage
-              ] (./KennethBrowder_FabienLagnieu_V1.bbl
+l.291 H
+       owever, its scalability to very large graphs remains uncertain, and i...
+]
+<paper2.png, id=117, 1487.5575pt x 565.11125pt>
+File: paper2.png Graphic file (type png)
+<use paper2.png>
+Package pdftex.def Info: paper2.png  used on input line 322.
+(pdftex.def)             Requested size: 234.8775pt x 89.22105pt.
+
+Underfull \vbox (badness 1237) has occurred while \output is active []
+
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+[]\OT1/ptm/m/n/10 (+20) Both pa-pers use un-rolling to build in-ter-pretable,
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 345--346
+\OT1/ptm/m/n/10 (+20) optimization-inspired neu-ral ar-chi-tec-tures. Sig-nal e
+s-
+ []
+
+
+
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.364 \newpage
+               <./paper2.png>] (./KennethBrowder_FabienLagnieu.bbl
 
 )
 
-[4]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+[5]
 
+[6
 
-[5
-
-] (./KennethBrowder_FabienLagnieu_V1.aux)
+] (./KennethBrowder_FabienLagnieu.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `KennethBrowder_FabienLagnieu_V1.out' has not
- changed.
+Package rerunfilecheck Info: File `KennethBrowder_FabienLagnieu.out' has not ch
+anged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26777 strings out of 473190
- 495325 string characters out of 5715800
- 902726 words of memory out of 5000000
- 49243 multiletter control sequences out of 15000+600000
- 606324 words of font info for 269 fonts, out of 8000000 for 9000
+ 26807 strings out of 473190
+ 495644 string characters out of 5715800
+ 901937 words of memory out of 5000000
+ 49246 multiletter control sequences out of 15000+600000
+ 605075 words of font info for 278 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,101p,1028b,645s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,101p,1025b,645s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
@@ -1018,17 +1049,17 @@ local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
 texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
-live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
-ive/2025/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2025
-/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/
-type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw
-/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
-r8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on KennethBrowder_FabienLagnieu_V1.pdf (5 pages, 302858 bytes).
+live/2025/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/202
+5/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-
+dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts
+/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/ur
+w/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+
+Output written on KennethBrowder_FabienLagnieu.pdf (6 pages, 334351 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 79378 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 73751 words of extra memory for PDF output out of 74296 (max. 10000000)
 

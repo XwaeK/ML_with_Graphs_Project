@@ -111,7 +111,9 @@
 This report analyzes the paper \textit{Interpretable Lightweight Transformer via Unrolling of Learned Graph Smoothness Priors} \cite{do2024interpretable}. The authors propose an efficient and interpretable transformer-like model for graph-signal interpolation. Their method uses unrolled optimization algorithms based on graph smoothness priors. The first section presents its main contributions, methodology, and experimental results, and describes the reproduction of one key experiment and an additional experiment. The second section examines a related paper, discusses its relevance, and compares its approach with the first.
 \end{abstract}
 
-\section*{Section 1: Analysis of the Main Paper}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% First part : main paper %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Section 1: Technical Review of the Main Paper}
 
 \textit{Interpretable Lightweight Transformer via Unrolling of Learned Graph Smoothness Priors}
 \\Tam Thuc Do, Parham Eftekhar, Seyed Alireza Hosseini, Gene Cheung, Philip Chou - Published in June 2024.
@@ -161,13 +163,14 @@ Once the graph is defined, the model performs signal interpolation guided by gra
 \vskip -0.3in
 \end{figure}
 
-Each iteration of these algorithms is implemented as a neural network layer, enabling end-to-end training through backpropagation. Each iteration of these algorithms is implemented as a neural network layer, enabling end-to-end training through backpropagation. A schematic algorithm illustrating the iterative structure is provided in Appendix.
+Each iteration of these algorithms is implemented as a neural network layer, enabling end-to-end training through backpropagation. The process is illustrated in \cref{fig:unrolling-gtv}; a schematic algorithm is also provided in Appendix A.
+
 
 \subsubsection{Interpretability and Efficiency}
 
 Each layer performs a well-defined, interpretable operation, replacing traditional self-attention with a graph learning module guided by graph smoothness priors, avoiding the opacity of key-query-value mechanisms.
 
-By leveraging unrolled optimization and efficient graph-based operations, the model eliminates large parameter matrices, reducing computational cost while maintaining strong performance.
+Using unrolled optimization and graph-based operations, the model eliminates large parameter matrices, reducing computational cost while maintaining strong performance.
 
 This model advances the state-of-the-art by showing that transformer-like architectures can achieve competitive performance with fewer parameters, while offering greater interpretability than conventional attention mechanisms.
 
@@ -258,23 +261,23 @@ In this section, we describe the experiments we performed to reproduce the key r
 
 \textbf{Objective}: Validate the demosaicking performance of the proposed uGTV model on the ZzZzZ dataset.
 
-\textbf{Methodology}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
+\textbf{Methodology}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ
 
-\textbf{Results}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
+\textbf{Results}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ
 
-\textbf{Discussion}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
+\textbf{Discussion}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ
 
 \subsubsection{Additional Experiment}
 
-\textbf{Objective}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
+\textbf{Objective}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
 
-\textbf{Methodology}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
+\textbf{Methodology}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ
 
-\textbf{Results}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
+\textbf{Results}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ
 
-\textbf{Discussion}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ 
+\textbf{Discussion}: ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ
 
-Further details on these experiments are provided in the appendix. The full codebase is available at:
+Further details on these experiments are provided in the Appendix B. The full codebase is available at:
 \begin{center}
 \vskip -0.1in
 \href{https://github.com/XwaeK/ML_with_Graphs_Project.git}{\textbf{\texttt{https://github.com/XwaeK/\\ML\_with\_Graphs\_Project.git}}}
@@ -288,22 +291,76 @@ The proposed model successfully combines interpretability, computational efficie
 However, its scalability to very large graphs remains uncertain, and it has so far only been applied to image-based signal interpolation and demosaicking tasks; future work could explore its extension to more diverse graph learning problems such as node classification or link prediction.
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Second part : related paper %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \setcounter{section}{2}
 \setcounter{subsection}{0}
-\section*{Section 2: Analysis of a Related Paper}
+\section*{Section 2: Cross-Paper Reflection and Methodological Contrast}
 
-\textit{Inpainting-Driven Graph Learning via Explainable Neural Networks}
-\\Minh Trieu Trinh, Tam V. Nguyen, Thanh-Toan Do, Dinh Phung, Svetha Venkatesh - Published in 2024.
+\textit{Inpainting-Driven Graph Learning via Explainable Neural Networks} \\
+Subbareddy Batreddy, Pushkal Mishra, Yaswanth Kakarla, Aditya Siripuram — IEEE SPL, 2025.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Kenneth %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Relevance to the Primary Study}
 
-\subsection{ZzZzZ ZzZzZ Kenneth ZzZzZ ZzZzZ}
+This paper \cite{batreddy2025inpainting} builds upon the unrolling-based paradigm introduced in our main reference \cite{do2024interpretable}, extending it to time-varying signals. It introduces a neural model that jointly infers both the graph structure and missing data, trained end-to-end through a closed-loop inpainting process.
+
+Notably, it cites our main paper as a state-of-the-art baseline. Both methods couple signal reconstruction and graph learning, but this second work targets temporal data and adopts a fully unsupervised learning scheme.
+
+\subsection{Methodological Contributions}
+
+The authors propose a trainable unrolled architecture alternating between:
+1. \textit{Signal interpolation:} Filling in missing values of temporal graph signals.
+2. \textit{Graph update:} Adjusting the topology based on the updated signal.
 
 
+Each component is differentiable, enabling \textit{end-to-end training}. A feedback loop ensures that signal recovery quality directly informs graph adaptation.
+
+\begin{figure}[h]
+    \centering
+    \vskip -0.1in
+    \includegraphics[width=\linewidth]{paper2.png}
+    \vskip -0.15in
+    \caption{Unrolled model with a closed-loop feedback system. \cite{batreddy2025inpainting}.}
+    \label{fig:paper2_model}
+    \vskip -0.2in
+\end{figure}
+
+\subsubsection{A Closed-Loop Framework}
+
+Unlike open-loop methods where the graph is fixed prior to reconstruction, this model iteratively refines the graph through reconstruction feedback. Fig.~\ref{fig:paper2_model} illustrates this synergy between tasks.
+
+\subsubsection{Unsupervised Learning for Time-Varying Data}
+
+The model operates without ground-truth graphs. Training is supervised solely by the inpainting loss on observed entries, making it especially suitable for domains like neuroimaging or environmental monitoring.
+
+\subsubsection{Empirical Results}
+
+On real and synthetic datasets, the model outperforms two-stage baselines, both in reconstructing the signal and in recovering graphs closer to the ground truth. This supports its dual effectiveness and interpretability.
+
+\subsection{Connections and Complementarities with the Main Paper}
+
+\subsubsection{Shared Design Principles}
+
+Both papers use unrolling to build interpretable, optimization-inspired neural architectures. Signal estimation and graph refinement alternate at each layer, embedding prior knowledge (e.g., smoothness) into learning. This joint training improves reconstruction and ensures that graph updates are guided by recovery performance.
 
 
+\subsubsection{Contrasts in Scope and Implementation}
+
+The key distinction lies in data modality and training paradigm. The main paper targets spatially structured image signals, using fixed graph priors (e.g., Mahalanobis distances) and allowing supervised training with full ground truth. In contrast, the second paper focuses on time-varying signals with unknown topology, requiring an unsupervised framework from partial observations.
+
+Architecturally, the main model unrolls ADMM iterations with explicit regularization, while the second relies on flexible neural unrolling. Graph structure is jointly learned with signal recovery, guided solely by reconstruction performance.
+
+\subsubsection{Complementary Contributions}
+
+Together, these works highlight the versatility and promise of unrolling-based graph learning. The first focuses on interpretable and lightweight modeling in image restoration tasks, while the second tackles temporal graph data with a fully unsupervised, task-driven training approach. 
+
+Their complementary designs contribute to advancing the state of the art, showing how task-adaptive graph inference can benefit diverse GSP problems—from static image interpolation to dynamic time-series reconstruction.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \bibliography{biblio}
 \bibliographystyle{icml2025}
@@ -317,24 +374,18 @@ However, its scalability to very large graphs remains uncertain, and it has so f
 \newpage
 \appendix
 \onecolumn
-\section{You \emph{can} have an appendix here.}
+\section{Unrolled Optimization Framework from the Main GTV-based Model}
 
-You can have as much text here as you want. The main body must be at most $8$ pages long.
-For the final version, one more page can be added.
-If you want, you can use an appendix like this one.  
-
-The $\mathtt{\backslash onecolumn}$ command above can be kept in place if you prefer a one-column appendix, or can be removed if you prefer a two-column appendix.  Apart from this possible change, the style (font size, spacing, margins, page numbering, etc.) should be kept the same as the main body.
-
-\begin{algorithm}[tb]
+\begin{algorithm}[h]
    \caption{Unrolling of GTV-based signal interpolation algorithm.}
    \label{alg:ugtv_admm_bp}
 \begin{algorithmic}
    \STATE \textbf{Input:} Initial signal observations $y$, initial graph $C_1$
    \STATE \textbf{Parameters:} Number of unrolled layers $T$, ADMM iterations $K$, operator $H(\cdot)$
    \STATE \textbf{Learnable:} Mahalanobis matrix $M$, ADMM parameters, $H$
-   \STATE \textbf{Initialization:} $y_1 \gets y$
+   \STATE \textbf{Initialization:} $y_1 \gets y$ \hfill \textit{\# First signal input}
 
-   \FOR{$t = 1$ {\bfseries to} $T$}
+   \FOR{$t = 1$ {\bfseries to} $T$} 
        \STATE Initialize $x_t^{(0)}$, $q_t^{(0)}$, $\mu_t^{(0)}$
        \FOR{$k = 1$ {\bfseries to} $K$}
             \STATE $(x_t^{(k)}, q_t^{(k)}, \mu_t^{(k)}) \gets \text{ADMM\_Layer}(C_t, y_t, q_t^{(k-1)}, \mu_t^{(k-1)})$
@@ -346,10 +397,18 @@ The $\mathtt{\backslash onecolumn}$ command above can be kept in place if you pr
        \ENDIF
    \ENDFOR
 
-   \STATE \textbf{Compute loss:} $\mathcal{L}(x_T, x_{gt})$ \hfill \textit{\# x ground truth $x_{gt}$}
+   \STATE \textbf{Compute loss:} $\mathcal{L}(x_T, x_{gt})$ \hfill \textit{\# Compare with ground truth}
    \STATE \textbf{Backpropagate gradients through all layers to update parameters}
 \end{algorithmic}
 \end{algorithm}
+
+
+\section{Details of key and additional experiments}
+
+ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ ZzZzZ
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
