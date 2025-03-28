@@ -27,12 +27,12 @@ We are analyzing and reproducing experiments from the following papers:
 | Task                                                | Responsible         | Status        |
 |-----------------------------------------------------|---------------------|---------------|
 | Read and summarize **Paper 1**                      | Fabien Lagnieu      | ✅ Done       |
-| Prepare the **presentation PDF slides**             | Fabien Lagnieu      | ⏳ In progress|
+| Prepare the **presentation PDF slides**             | Fabien Lagnieu      | 80%           |
 | Reproduce at least one **experiment from Paper 1**  | Kenneth Browder     | ⏳ In progress|
 | + a **"new experiment"** (2nd mail)                 | Kenneth Browder     | ⏳ In progress|
 | Analyze and summarize **Paper 2**                   | Kenneth Browder     | ⏳ In progress|
 | Write **Part 1** of the report (Paper 1 summary)    | Fabien Lagnieu      | ✅ Done       |
-| Write **Part 2** of the report (Paper comparison)   | Kenneth Browder     | ⏳ In progress|
+| Write **Part 2** of the report (Paper comparison)   | Fabien Lagnieu      | ✅ Done       |
 | Final review and corrections                        | Both                |               |
 | Upload PDF slides & final report to the platform    | Fabien Lagnieu      |               |
 
