@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Context \& Motivation}{3}{0}{1}
+\beamer@sectionintoc {2}{State of the Art}{4}{0}{2}
+\beamer@sectionintoc {3}{Main Contributions}{5}{0}{3}
+\beamer@sectionintoc {4}{Methodology}{6}{0}{4}
+\beamer@sectionintoc {5}{Paper Experimentation}{9}{0}{5}
+\beamer@sectionintoc {6}{Critical Analysis}{13}{0}{6}
+\beamer@sectionintoc {7}{Conclusion \& Questions}{14}{0}{7}
